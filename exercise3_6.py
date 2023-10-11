@@ -2,11 +2,11 @@
 
 year = int(input("Give year:\n"))
 
-if year % 400:
+if year % 400 == 0:
     print("Leap year: YES")
-    if year % 100:
-        print("Leap year: NO")
-    if year % 4:
+elif year % 4 == 0:
         print("Leap year: YES")
-    if not year % 4:
+elif year % 100 == 0:
+        print("Leap year: NO")
+elif year % 4 == 0:
         print("Leap year: NO")
