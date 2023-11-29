@@ -21,4 +21,11 @@ d.polygon([(400, 100), (200, 100), (300, 240)], fill = (255, 255, 255))
 # blue circle
 d.ellipse((250, 103, 350, 203), fill =(0, 75, 255))
 
+# alternate way to give circle position
+"""
+diameter = 100
+place = (250, 100)
+d.ellipse((place[0], place[1], place[0] + diameter, place[1] + diameter), fill =(0, 75, 255))
+"""
+
 img.save('pil_img.png')
